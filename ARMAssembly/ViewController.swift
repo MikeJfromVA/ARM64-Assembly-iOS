@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var decimalNumberField: UITextField!
     @IBOutlet weak var result: UILabel!
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func calculate(_ sender: Any) {
         result.text = "We should probably do something smart here"
     }
