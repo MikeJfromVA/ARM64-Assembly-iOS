@@ -16,6 +16,8 @@
 		2DFFB50F20AEDA9C007528D3 /* ARMAssemblyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFB50E20AEDA9C007528D3 /* ARMAssemblyUITests.swift */; };
 		2DFFB51D20AEDCF1007528D3 /* SimpleFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFB51C20AEDCF1007528D3 /* SimpleFunction.swift */; };
 		2DFFB52120B0604D007528D3 /* popcount.c in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFB52020B0604C007528D3 /* popcount.c */; };
+		2DFFB52320B0638F007528D3 /* popcount.s in Sources */ = {isa = PBXBuildFile; fileRef = 2DFFB52220B0638F007528D3 /* popcount.s */; };
+		2DFFB52620B069C6007528D3 /* pop.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DFFB52520B069C5007528D3 /* pop.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		2DFFB51E20B06009007528D3 /* popcount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = popcount.h; sourceTree = "<group>"; };
 		2DFFB51F20B0604C007528D3 /* ARMAssembly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARMAssembly-Bridging-Header.h"; sourceTree = "<group>"; };
 		2DFFB52020B0604C007528D3 /* popcount.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = popcount.c; sourceTree = "<group>"; };
+		2DFFB52220B0638F007528D3 /* popcount.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = popcount.s; sourceTree = "<group>"; };
+		2DFFB52520B069C5007528D3 /* pop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		2DFFB4E220AEDA99007528D3 = {
 			isa = PBXGroup;
 			children = (
+				2DFFB52420B069B4007528D3 /* Assets */,
 				2DFFB4ED20AEDA99007528D3 /* ARMAssembly */,
 				2DFFB50220AEDA9C007528D3 /* ARMAssemblyTests */,
 				2DFFB50D20AEDA9C007528D3 /* ARMAssemblyUITests */,
@@ -108,6 +113,7 @@
 				2DFFB51C20AEDCF1007528D3 /* SimpleFunction.swift */,
 				2DFFB51E20B06009007528D3 /* popcount.h */,
 				2DFFB52020B0604C007528D3 /* popcount.c */,
+				2DFFB52220B0638F007528D3 /* popcount.s */,
 				2DFFB4F220AEDA99007528D3 /* Main.storyboard */,
 				2DFFB4F520AEDA9C007528D3 /* Assets.xcassets */,
 				2DFFB4F720AEDA9C007528D3 /* LaunchScreen.storyboard */,
@@ -133,6 +139,14 @@
 				2DFFB51020AEDA9C007528D3 /* Info.plist */,
 			);
 			path = ARMAssemblyUITests;
+			sourceTree = "<group>";
+		};
+		2DFFB52420B069B4007528D3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2DFFB52520B069C5007528D3 /* pop.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +256,7 @@
 			files = (
 				2DFFB4F920AEDA9C007528D3 /* LaunchScreen.storyboard in Resources */,
 				2DFFB4F620AEDA9C007528D3 /* Assets.xcassets in Resources */,
+				2DFFB52620B069C6007528D3 /* pop.png in Resources */,
 				2DFFB4F420AEDA99007528D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DFFB4F120AEDA99007528D3 /* ViewController.swift in Sources */,
+				2DFFB52320B0638F007528D3 /* popcount.s in Sources */,
 				2DFFB4EF20AEDA99007528D3 /* AppDelegate.swift in Sources */,
 				2DFFB51D20AEDCF1007528D3 /* SimpleFunction.swift in Sources */,
 				2DFFB52120B0604D007528D3 /* popcount.c in Sources */,
