@@ -8,6 +8,13 @@
 
 import UIKit
 
+extension Int {
+    init?(_ string: String?) {
+        guard let string = string else { return nil }
+        self.init(string)
+    }
+}
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var decimalNumberField: UITextField!
@@ -18,7 +25,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func calculate(_ sender: Any) {
-        result.text = "We should probably do something smart here"
+        let warning = "Please enter a number \nfrom 0 to 1 000 000 000"
+
+        guard let userNumber = Int(decimalNumberField.text) else {
+            result.text = warning
+            return
+        }
+
+        let cint = CInt(userNumber)
+        
+        let resultCount = popcount(cint)
+        
+        result.text = "The number of 1-bits in \(userNumber) is \(resultCount)\n" +
+        "Because its binary representation is: \n" +
+            String(userNumber, radix: 2)
+        
     }
     
     override func viewDidLoad() {
