@@ -52,7 +52,6 @@
 		2DFFB50E20AEDA9C007528D3 /* ARMAssemblyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMAssemblyUITests.swift; sourceTree = "<group>"; };
 		2DFFB51020AEDA9C007528D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DFFB51C20AEDCF1007528D3 /* SimpleFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleFunction.swift; sourceTree = "<group>"; };
-		2DFFB51E20B06009007528D3 /* popcount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = popcount.h; sourceTree = "<group>"; };
 		2DFFB51F20B0604C007528D3 /* ARMAssembly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARMAssembly-Bridging-Header.h"; sourceTree = "<group>"; };
 		2DFFB52020B0604C007528D3 /* popcount.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = popcount.c; sourceTree = "<group>"; };
 		2DFFB52220B0638F007528D3 /* popcount.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = popcount.s; sourceTree = "<group>"; };
@@ -111,7 +110,6 @@
 				2DFFB4EE20AEDA99007528D3 /* AppDelegate.swift */,
 				2DFFB4F020AEDA99007528D3 /* ViewController.swift */,
 				2DFFB51C20AEDCF1007528D3 /* SimpleFunction.swift */,
-				2DFFB51E20B06009007528D3 /* popcount.h */,
 				2DFFB52020B0604C007528D3 /* popcount.c */,
 				2DFFB52220B0638F007528D3 /* popcount.s */,
 				2DFFB4F220AEDA99007528D3 /* Main.storyboard */,
