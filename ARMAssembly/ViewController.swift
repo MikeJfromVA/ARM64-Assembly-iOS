@@ -9,7 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var decimalNumberField: UITextField!
+    @IBOutlet weak var result: UILabel!
+    
+    @IBAction func calculate(_ sender: Any) {
+        result.text = "We should probably do something smart here"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
