@@ -25,9 +25,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func calculate(_ sender: Any) {
-        let warning = "Please enter a number \nfrom 0 to 1 000 000 000"
+        let warning = "Please enter a number \nfrom 0 to 255"
 
         guard let userNumber = Int(decimalNumberField.text) else {
+            result.text = warning
+            return
+        }
+        
+        guard userNumber >= 0 && userNumber <= 255 else {
             result.text = warning
             return
         }
