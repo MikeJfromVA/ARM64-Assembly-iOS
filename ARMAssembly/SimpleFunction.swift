@@ -8,6 +8,6 @@
 
 import Foundation
 
-@inline(never) func addTwoNumbers(_ a:Int, _ b: Int) -> Int {
+func addTwoNumbers(_ a:Int, _ b: Int) -> Int {
     return a + b
 }
