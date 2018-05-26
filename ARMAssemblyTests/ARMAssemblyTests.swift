@@ -21,9 +21,20 @@ class ARMAssemblyTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testPopcount() {
+        XCTAssert(popcount(0) == 0)
+        XCTAssert(popcount(1) == 1)
+        XCTAssert(popcount(2) == 1)
+        XCTAssert(popcount(3) == 2)
+        XCTAssert(popcount(4) == 1)
+        XCTAssert(popcount(5) == 2)
+        
+        XCTAssert(popcount(250) == 6)
+        XCTAssert(popcount(251) == 7)
+        XCTAssert(popcount(252) == 6)
+        XCTAssert(popcount(253) == 7)
+        XCTAssert(popcount(254) == 7)
+        XCTAssert(popcount(255) == 8)
     }
     
     func testPerformanceExample() {

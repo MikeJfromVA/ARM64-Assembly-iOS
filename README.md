@@ -17,3 +17,4 @@ This code shows a simple bit of embedded ARM64 assembly code in an iOS applicati
 * **popcount.s** uses **cnt**, an Aarch64 instruction, to compute the population count. It is only compiled when the XCode Target is a physical device.
 * **ArmAssembly-Bridging-Header.h** provides the function header for both **popcount.c** and **popcount.s**.
 * **SimpleFunction.swift** does not actually play a role in the app directly. Compile this into assembly (xcrun -sdk iphoneos swiftc -emit-assembly -target arm64-apple-ios11.0 SimpleFunction.swift) to see some ARM64 operations. Used this as a template for **popcount.s**.
+* **ARMAssemblyTests.swift** contains a simple unit test. Run on device *and* in simulator to test both **popcount.c** and **popcount.s**.
